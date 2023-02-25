@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "The\nReview\nRoom",
+              "The\nReview\nRoom.",
               style: TextStyle(
                   fontSize: 80,
                   fontWeight: FontWeight.w900,

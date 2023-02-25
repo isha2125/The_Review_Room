@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 // import 'mainScreen.dart';
-
+//library Home;
+export "package:mozo_hack/homeScreen.dart";
 import 'contentPg.dart';
 import 'searchPg.dart';
 import 'accountPg.dart';
@@ -35,21 +36,21 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff7e930),
+      backgroundColor: Color.fromARGB(255, 38, 41, 138),
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: currentIndex,
         onTap: (index) => setState(() => currentIndex = index),
-        backgroundColor: Color(0xfff7e930),
-        selectedItemColor: Color.fromARGB(255, 38, 41, 138),
+        backgroundColor: Color.fromARGB(255, 38, 41, 138),
+        selectedItemColor: Color(0xfff7e930),
         iconSize: 33,
         // ignore: prefer_const_literals_to_create_immutables
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: "Home",
-              backgroundColor: Color.fromARGB(255, 164, 59, 59)),
+              backgroundColor: Color.fromARGB(255, 38, 41, 138)),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: "Explore",
@@ -86,8 +87,9 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            "Say goodbye to scouring multiple websites for reviews and hello to a one-stop-shop for all your review needs. \nIntroducing The Review Room!",
+            "Goodbye to scouring multiple websites for reviews.\n \nHello to a one-stop-shop for all your review needs. \n\nIntroducing The Review Room!",
             style: TextStyle(
+              color: Color(0xfff7e930),
               fontFamily: 'work_Sans',
               fontSize: 20,
               fontWeight: FontWeight.w800,
@@ -95,10 +97,11 @@ class _HomeState extends State<Home> {
             textAlign: TextAlign.center,
           ),
           Text(
-            "Try it out Yourself",
+            "Try it out!!",
             style: TextStyle(
+              color: Color(0xfff7e930),
               fontFamily: 'work_Sans',
-              fontSize: 30,
+              fontSize: 40,
               fontWeight: FontWeight.w800,
             ),
             textAlign: TextAlign.center,
@@ -114,7 +117,7 @@ class _HomeState extends State<Home> {
                 controller: myController,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Color.fromARGB(255, 94, 85, 192),
+                  fillColor: Color(0xfff7e930),
                   suffixIcon: IconButton(
                       onPressed: () {
                         Navigator.push(
